@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: HarmonyOS_Sans_SC_Medium;
+  src: url('./fonts/harmonyOCsansSC-font/HarmonyOS_Sans_SC_Medium.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-device-width: 360px){
+  body{
+    background: url('./images/bg-1.png') top no-repeat;
+    background-size: 100% 1024px;
+    /* background-size: 90px 90px; */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media (min-width: 768px){
+  body{
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
+
+@media (min-width: 992px){
+  body{
+    background: url('./images/bg-1.png') bottom no-repeat fixed;
+    background-size: 1720px auto;
+  }
+}
+
+/* body{
+  background: url('./images/bg-1.png') bottom no-repeat fixed;
+  background-size: 1720px auto;
+} */
